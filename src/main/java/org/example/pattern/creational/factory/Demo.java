@@ -6,7 +6,7 @@ import org.example.pattern.creational.factory.pizza.PizzaType;
 
 public class Demo {
   public static void main(String[] args) {
-    AbstractPizzaFactory factory = new PizzaFactory();
+    PizzaFactory factory = new PizzaFactory();
 
     Pizza pizza = factory.createPizza(PizzaType.CHEESE, PizzaSize.LARGE);
     factory.orderPizza(pizza);
